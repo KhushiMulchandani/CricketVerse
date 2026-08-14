@@ -69,5 +69,5 @@ CricketVerse uses MariaDB/MySQL for data persistence.
 
 ### Run the application, ensuring you include both the current directory and the JDBC driver path in the classpath:
 
-```bash
-java -cp ".;path/to/mysql-connector-j.jar" CricketVerse
+    ```bash
+    java -cp ".;path/to/mysql-connector-j.jar" CricketVerse
