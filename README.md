@@ -48,3 +48,41 @@ CricketVerse uses MariaDB/MySQL for data persistence.
   String url = "jdbc:mysql://localhost:3306/cricketverse_db";
   String user = "your_username";
   String password = "your_password";
+
+## How to Run
+
+Follow these steps to set up and run CricketVerse locally on your machine:
+
+### 1. Prerequisites
+* **Java Development Kit (JDK):** Ensure you have JDK 8 or higher installed on your system.
+* **Database Management System:** Install and run **MariaDB** or **MySQL**.
+* **JDBC Driver:** Download the **MySQL Connector/J** JAR file (JDBC driver) to allow Java to communicate with your database.
+
+### 2. Database Setup
+1. Open your MySQL/MariaDB command line or a GUI tool (like MySQL Workbench or DBeaver).
+2. Create a new database for the application[cite: 4]:
+   ```sql
+   CREATE DATABASE cricketverse_db;
+   
+3. Compiling and Running the Project
+Option A: Using an IDE (Recommended, e.g., IntelliJ IDEA)
+Open the project folder inside your Java IDE[cite: 4].
+
+Add the MySQL JDBC Driver JAR to your project's module dependencies or build path.
+
+Locate the main entry point file: CricketVerse.java[cite: 2].
+
+Run or Shift+F10 on CricketVerse.java to launch the command-line interface.
+
+Option B: Using the Command Line (Terminal / Command Prompt)
+Open your terminal and navigate to the root directory of the project source code.
+
+Compile all the Java files together using javac:
+
+Bash
+javac -cp "path/to/mysql-connector-j.jar" CricketVerse.java
+Run the application, ensuring you include both the current directory and the JDBC driver path in the classpath:
+
+Bash
+java -cp ".;path/to/mysql-connector-j.jar" CricketVerse
+(Note: Use : instead of ; as a classpath separator on Linux/macOS).
