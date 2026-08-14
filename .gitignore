@@ -12,3 +12,7 @@ Thumbs.db
 .DS_Store
 
 cv.zip
+
+# Database / Libraries
+database_Connection/
+*.jar

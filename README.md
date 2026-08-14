@@ -1,6 +1,6 @@
 # CricketVerse
 
-CricketVerse is a digital cricket scoring application designed to automate match recording and statistics management. It provides a structured, queryable system to replace manual scorekeeping, allowing users to track ball-by-ball match data and maintain persistent career statistics for players and teams.
+CricketVerse is a Java-based digital cricket scoring application designed to automate match recording and statistics management. It provides a structured, queryable system to replace manual scorekeeping, allowing users to track ball-by-ball match data and maintain persistent career statistics for players and teams.
 
 ## Purpose
 The application streamlines cricket match management by:
@@ -25,9 +25,6 @@ The application streamlines cricket match management by:
 * **HashSet**: Tracks players to prevent overcounting during innings.
 * **ArrayList/List**: Manages collections of players for team rosters and selections.
 
-readme_content = """# CricketVerse
-
-CricketVerse is a Java-based digital cricket scoring application designed to replace manual scorekeeping with an automated, efficient system. It records ball-by-ball match data, calculates career statistics for players, and stores match history in a persistent database.
 
 ## Prerequisites & Dependencies
 * **Java Development Kit (JDK):** Version 8 or higher.
