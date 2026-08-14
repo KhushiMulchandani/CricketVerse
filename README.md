@@ -45,7 +45,6 @@ CricketVerse uses MariaDB/MySQL for data persistence.
 * Open the `database_Connection/DatabaseConnection.java` file.
 * Update the connection string, username, and password to match your local database configuration:
   ```java
-  // Example configuration
   String url = "jdbc:mysql://localhost:3306/cricketverse_db";
   String user = "your_username";
   String password = "your_password";
