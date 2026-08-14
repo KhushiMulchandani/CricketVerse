@@ -26,6 +26,11 @@ The application streamlines cricket match management by:
 * **ArrayList/List**: Manages collections of players for team rosters and selections.
 
 
+
+## How to Run
+
+Follow these steps to set up and run CricketVerse locally on your machine:
+
 ## Prerequisites & Dependencies
 * **Java Development Kit (JDK):** Version 8 or higher.
 * **Database:** MariaDB or MySQL.
@@ -37,11 +42,7 @@ The application streamlines cricket match management by:
 CricketVerse uses MariaDB/MySQL for data persistence.
 1. Install MariaDB/MySQL on your local machine.
 2. Create a new database named `cricketverse_db`.
-3. Configure the `DatabaseConnection.java` class with your local database credentials (URL, username, and password).
-4. The application includes a `createTables` method that automatically initializes the required tables upon first run:
-    * `user`, `PlayerProfile`, `Team`, `Team_Players`, `Tournament`, `Tournament_Teams`, `Matches`, `batting_stats`, `bowling_stats`, `fielding_stats`, `captain_stats`, `Score`, `Tournament_Round`, `Tournament_Points`, and `Scoreboard`.
-
-## Configuration
+3. Configuration
 * Open the `database_Connection/DatabaseConnection.java` file.
 * Update the connection string, username, and password to match your local database configuration:
   ```java
@@ -49,22 +50,10 @@ CricketVerse uses MariaDB/MySQL for data persistence.
   String user = "your_username";
   String password = "your_password";
 
-## How to Run
-
-Follow these steps to set up and run CricketVerse locally on your machine:
-
-### 1. Prerequisites
-* **Java Development Kit (JDK):** Ensure you have JDK 8 or higher installed on your system.
-* **Database Management System:** Install and run **MariaDB** or **MySQL**.
-* **JDBC Driver:** Download the **MySQL Connector/J** JAR file (JDBC driver) to allow Java to communicate with your database.
-
-### 2. Database Setup
-1. Open your MySQL/MariaDB command line or a GUI tool (like MySQL Workbench or DBeaver).
-2. Create a new database for the application[cite: 4]:
-   ```sql
-   CREATE DATABASE cricketverse_db;
+4. The application includes a `createTables` method that automatically initializes the required tables upon first run:
+    * `user`, `PlayerProfile`, `Team`, `Team_Players`, `Tournament`, `Tournament_Teams`, `Matches`, `batting_stats`, `bowling_stats`, `fielding_stats`, `captain_stats`, `Score`, `Tournament_Round`, `Tournament_Points`, and `Scoreboard`.
    
-3. Compiling and Running the Project
+## Compiling and Running the Project
 Option A: Using an IDE (Recommended, e.g., IntelliJ IDEA)
 Open the project folder inside your Java IDE[cite: 4].
 
