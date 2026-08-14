@@ -1,0 +1,14 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Compiled output / binaries
+out/
+bin/
+target/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+cv.zip
